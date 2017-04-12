@@ -56,9 +56,6 @@ docs/_build/
 # PyBuilder
 target/
 
-# DotEnv configuration
-.env
-
 # Database
 *.db
 *.rdb
@@ -70,4 +67,4 @@ target/
 .ipynb_checkpoints/
 
 # exclude data from source control by default
-/data/
+data/

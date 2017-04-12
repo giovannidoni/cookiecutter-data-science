@@ -1,7 +1,15 @@
-Elysium
+SCL-cookiecutter
 ==============================
 
-A short description of the project.
+SCL data-science coockiecutter.
+
+To start your project install coockiecutter first (`pip install cookiecutter`).
+
+Clone this repository in your preferred `{path}` , then run 
+`cookiecutter {path}/SCL-cookiecutter `  
+
+Modify .env file adding
+`PRJPATH={path}`
 
 Project Organization
 ------------
@@ -22,7 +30,6 @@ Project Organization
     ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
     │                         the creator's initials, and a short `-` delimited description, e.g.
     │                         `1.0-jqp-initial-data-exploration`.
-    │
     ├── references         <- Manuals, documents and all other explanatory materials.
     │
     ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
@@ -33,13 +40,18 @@ Project Organization
     │
     |── .env               <- File to set environmental variables.
     ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
+    │   │
+    │   ├── utils.py       <- General utils.
+    │   │
+    │   ├── mapping.py     <- Data dictionaries.
     │   │
     │   ├── matching       <- Scripts to match data to the database
     │   │   └── match.py
     │   │
     │   ├── features       <- Scripts to turn raw data into features for modeling
     │   │   └── build_features.py
+    │   │
+    │   ├── snippets       <- Folder where snippets of code are save by function in utils.py
     │   │
     │   └── models         <- Scripts to train models and then use trained models to make
     │       │                 predictions
